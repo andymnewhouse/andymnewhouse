@@ -15,7 +15,7 @@ blocks:
     text_color: text-white
     new_tab: false
     icon_color: null
-    overlay_color: bg-red-500
+    overlay_color: bg-red-200
     overlay_opacity: bg-opacity-95
     description: 'Follow my progress on building my own LEGO city!'
   -
@@ -29,9 +29,9 @@ blocks:
     enabled: true
     text_color: text-grey-800
     new_tab: false
-    icon_color: text-grey-800
-    overlay_color: bg-orange-500
-    overlay_opacity: bg-opacity-95
+    icon_color: null
+    overlay_color: bg-orange-200
+    overlay_opacity: null
     description: 'See what projects I''m working on in and around my house.'
   -
     title: 'Newest Newhouse'
@@ -45,8 +45,8 @@ blocks:
     text_color: text-gray-800
     new_tab: false
     icon_color: null
-    overlay_color: bg-purple-500
-    overlay_opacity: bg-opacity-95
+    overlay_color: bg-purple-200
+    overlay_opacity: null
     description: 'Follow my family''s journey through life.'
   -
     title: 'Developer Andy'
@@ -59,12 +59,38 @@ blocks:
     enabled: true
     text_color: text-white
     new_tab: false
-    icon_color: text-white
-    overlay_color: bg-blue-500
-    overlay_opacity: bg-opacity-95
+    icon_color: null
+    overlay_color: bg-blue-200
+    overlay_opacity: null
     description: 'All things related to web development. i.e. Laravel, Tailwind, Livewire, Statamic'
+  -
+    title: Activism
+    text_color: text-white
+    url: /activism
+    new_tab: false
+    icon: icon/human-rights.svg
+    icon_color: null
+    background: background/blurry-background.jpg
+    overlay_color: bg-gray-200
+    overlay_opacity: null
+    description: 'As a director for the Midwest Institute for Sexuality and Gender Diversity activism is a integral part of who I am. Though my journey to calling myself an activist has been a long one.'
+    type: block
+    enabled: true
+  -
+    title: 'Junk Drawer'
+    text_color: text-white
+    url: /junk-drawer
+    new_tab: false
+    icon: icon/recycle-bin.svg
+    icon_color: null
+    background: background/blurry-background.jpg
+    overlay_color: bg-green-200
+    overlay_opacity: null
+    description: 'All of my thoughts that don''t fit into another category.'
+    type: block
+    enabled: true
 updated_by: 52adfc97-1de2-4e43-8b5c-ab03b60473be
-updated_at: 1599086722
+updated_at: 1599143933
 intro: |
   # Hi I'm Andy.
   
