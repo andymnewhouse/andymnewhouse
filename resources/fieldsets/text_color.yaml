@@ -1,0 +1,9 @@
+title: 'Text Color'
+fields:
+  -
+    handle: text_color
+    field:
+      input_type: text
+      type: text
+      listable: hidden
+      display: 'Text Color'

@@ -1,0 +1,16 @@
+title: Header
+collections:
+  - pages
+root: true
+tree:
+  -
+    entry: home
+  -
+    entry: 86538226-0f01-4221-b431-159cad8ace67
+  -
+    entry: 92956f22-4bf6-4a99-8ec3-ed57173fc38d
+  -
+    title: 'Newest Newhouse'
+    url: 'https://newestnewhouse.me'
+  -
+    entry: 1438c80a-6507-4258-b0b2-ea2a0fc1f300

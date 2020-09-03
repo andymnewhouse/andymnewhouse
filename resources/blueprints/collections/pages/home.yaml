@@ -1,0 +1,142 @@
+title: Home
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: intro
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          type: markdown
+          listable: hidden
+          display: Intro
+      -
+        handle: blocks
+        field:
+          sets:
+            block:
+              display: Block
+              fields:
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    type: text
+                    width: 50
+                    listable: hidden
+                    display: Title
+                -
+                  handle: text_color
+                  field:
+                    input_type: text
+                    type: text
+                    width: 50
+                    listable: hidden
+                    display: 'Text Color'
+                -
+                  handle: url
+                  field:
+                    input_type: url
+                    type: text
+                    width: 50
+                    listable: hidden
+                    display: Url
+                -
+                  handle: new_tab
+                  field:
+                    type: toggle
+                    width: 50
+                    listable: hidden
+                    display: 'New Tab'
+                -
+                  handle: icon
+                  field:
+                    mode: grid
+                    container: assets
+                    folder: /
+                    restrict: false
+                    allow_uploads: true
+                    max_files: 1
+                    type: assets
+                    listable: hidden
+                    display: Icon
+                    width: 50
+                -
+                  handle: icon_color
+                  field:
+                    input_type: text
+                    type: text
+                    width: 50
+                    listable: hidden
+                    display: 'Icon Color'
+                -
+                  handle: background
+                  field:
+                    mode: grid
+                    container: assets
+                    folder: /
+                    restrict: false
+                    allow_uploads: true
+                    max_files: 1
+                    type: assets
+                    listable: hidden
+                    display: Background
+                -
+                  handle: overlay_color
+                  field:
+                    input_type: text
+                    type: text
+                    width: 50
+                    listable: hidden
+                    display: 'Overlay Color'
+                -
+                  handle: overlay_opacity
+                  field:
+                    input_type: text
+                    type: text
+                    width: 50
+                    listable: hidden
+                    display: 'Overlay Opacity'
+                -
+                  handle: description
+                  field:
+                    type: textarea
+                    listable: hidden
+                    display: Description
+          type: replicator
+          listable: hidden
+          display: Blocks
+      -
+        handle: template
+        field:
+          hide_partials: true
+          type: template
+          listable: hidden
+          display: Template
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
