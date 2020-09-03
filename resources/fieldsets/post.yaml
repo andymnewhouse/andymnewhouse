@@ -1,0 +1,38 @@
+title: Post
+fields:
+  -
+    handle: bard
+    field:
+      always_show_set_button: false
+      buttons:
+        - h1
+        - h2
+        - h3
+        - h4
+        - bold
+        - italic
+        - underline
+        - strikethrough
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+        - superscript
+        - subscript
+        - code
+        - codeblock
+      container: assets
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      type: bard
+      listable: hidden
+      display: Content

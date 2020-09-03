@@ -1,0 +1,29 @@
+title: Developer
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        import: post
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+      -
+        handle: dev_tags
+        field:
+          type: terms
+          taxonomies:
+            - dev_tags
+          display: 'Dev Tags'
+          mode: select
