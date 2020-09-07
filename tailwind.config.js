@@ -1,6 +1,17 @@
 module.exports = {
   purge: [],
   theme: {
+    typography: {
+        'dark': {
+            css: {
+                fontSize: '1.875rem',
+                h1: {
+                fontSize: '4rem',
+                },
+                // ...
+            },
+        },
+    },
     extend: {
         height: {
             '1/2-screen': '49vh'
