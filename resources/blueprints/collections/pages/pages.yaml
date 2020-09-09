@@ -1,33 +1,47 @@
 title: Pages
 sections:
   main:
+    display: Main
     fields:
       -
         handle: title
         field:
           type: text
           required: true
+          validate:
+            - required
       -
         handle: content
         field:
           type: markdown
-          display: Content
+          display: Description
           localizable: true
-      -
-        handle: author
-        field:
-          type: users
-          display: Author
-          default: current
-          localizable: true
-          max_items: 1
+          listable: hidden
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
       -
         handle: template
         field:
           type: template
           display: Template
           localizable: true
+      -
+        handle: icon
+        field:
+          mode: grid
+          container: assets
+          folder: icon
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          listable: hidden
+          display: Icon
   sidebar:
+    display: Sidebar
     fields:
       -
         handle: slug
@@ -35,6 +49,8 @@ sections:
           type: slug
           required: true
           localizable: true
+          validate:
+            - required
       -
         handle: parent
         field:

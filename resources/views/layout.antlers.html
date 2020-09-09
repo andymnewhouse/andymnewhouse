@@ -9,6 +9,9 @@
         <script src="{{ mix src='/js/site.js' }}"></script>
     </head>
     <body class="bg-white dark:bg-gray-900">
+        {{ if title !== 'Home' }}
+            {{ partial src="components/navbar" }}
+        {{ /if }}
         {{ template_content }}
     </body>
 </html>
