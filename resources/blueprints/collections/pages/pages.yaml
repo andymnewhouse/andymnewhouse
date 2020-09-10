@@ -28,6 +28,16 @@ sections:
           type: template
           display: Template
           localizable: true
+  settings:
+    display: Settings
+    fields:
+      -
+        handle: font
+        field:
+          input_type: text
+          type: text
+          listable: hidden
+          display: Font
       -
         handle: icon
         field:
@@ -40,6 +50,32 @@ sections:
           type: assets
           listable: hidden
           display: Icon
+      -
+        handle: text_color
+        field:
+          input_type: text
+          type: text
+          listable: hidden
+          display: 'Text Color'
+      -
+        handle: background
+        field:
+          mode: grid
+          container: assets
+          folder: background
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          listable: hidden
+          display: Background
+      -
+        handle: brand_color
+        field:
+          input_type: text
+          type: text
+          listable: hidden
+          display: 'Brand Color'
   sidebar:
     display: Sidebar
     fields:

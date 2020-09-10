@@ -36,3 +36,15 @@ fields:
       type: bard
       listable: hidden
       display: Content
+  -
+    handle: excerpt
+    field:
+      type: textarea
+      listable: hidden
+      display: Excerpt
+  -
+    handle: pinned
+    field:
+      type: toggle
+      listable: hidden
+      display: Pinned

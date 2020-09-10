@@ -8,6 +8,8 @@ sections:
         field:
           type: text
           required: true
+          validate:
+            - required
       -
         handle: intro
         field:
@@ -20,11 +22,17 @@ sections:
           listable: hidden
           display: Intro
       -
+        handle: rotate
+        field:
+          type: list
+          listable: hidden
+          display: 'Rotating Intro Sentence'
+      -
         handle: blocks
         field:
           sets:
-            block:
-              display: Block
+            external_link:
+              display: 'External Link'
               fields:
                 -
                   handle: title
@@ -51,13 +59,6 @@ sections:
                     listable: hidden
                     display: Url
                 -
-                  handle: new_tab
-                  field:
-                    type: toggle
-                    width: 50
-                    listable: hidden
-                    display: 'New Tab'
-                -
                   handle: icon
                   field:
                     mode: grid
@@ -70,14 +71,6 @@ sections:
                     listable: hidden
                     display: Icon
                     width: 50
-                -
-                  handle: icon_color
-                  field:
-                    input_type: text
-                    type: text
-                    width: 50
-                    listable: hidden
-                    display: 'Icon Color'
                 -
                   handle: background
                   field:
@@ -99,14 +92,6 @@ sections:
                     listable: hidden
                     display: 'Overlay Color'
                 -
-                  handle: overlay_opacity
-                  field:
-                    input_type: text
-                    type: text
-                    width: 50
-                    listable: hidden
-                    display: 'Overlay Opacity'
-                -
                   handle: description
                   field:
                     restrict: false
@@ -117,6 +102,19 @@ sections:
                     type: markdown
                     listable: hidden
                     display: Description
+            internal_page:
+              display: 'Internal Page'
+              fields:
+                -
+                  handle: page
+                  field:
+                    max_items: 1
+                    mode: select
+                    collections:
+                      - pages
+                    type: entries
+                    listable: hidden
+                    display: Page
           type: replicator
           listable: hidden
           display: Blocks
@@ -136,6 +134,8 @@ sections:
           type: slug
           required: true
           localizable: true
+          validate:
+            - required
       -
         handle: parent
         field:

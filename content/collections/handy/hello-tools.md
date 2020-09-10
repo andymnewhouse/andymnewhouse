@@ -1,7 +1,7 @@
 ---
 title: 'Hello tools'
 updated_by: 52adfc97-1de2-4e43-8b5c-ab03b60473be
-updated_at: 1599146665
+updated_at: 1599705826
 bard:
   -
     type: paragraph
@@ -61,6 +61,7 @@ bard:
         type: text
         text: 'This section of my website I''ll show updates on my projects and ideas for new projects.'
 template: handy/show
-id: 1601629e-35bb-4976-b15d-960dd221e069
 blueprint: handy
+excerpt: 'This section of my website I''ll show updates on my projects and ideas for new projects.'
+id: 1601629e-35bb-4976-b15d-960dd221e069
 ---
