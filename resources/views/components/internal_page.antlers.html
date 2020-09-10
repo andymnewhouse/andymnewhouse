@@ -4,8 +4,8 @@
     <div class="opacity-0 group-hover:opacity-100 absolute w-full h-full bg-{{ brand_color }}-200 bg-opacity-98 transition ease-in-out duration-500 flex items-center justify-center">
         <div class="w-1/2">
             <div class="prose">
-                <h2>{{ title }}</h2>
-                <p>{{ content }}</p>
+                <h2 class="{{ font_heading }}">{{ title }}</h2>
+                <p class="{{ font_body }}">{{ content }}</p>
             </div>
             <span class="inline-flex rounded-md shadow-sm mt-2">
                 <a href="{{ url }}" class="inline-flex items-center px-4 py-2 border border-gray-300 text-base no-underline leading-6 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150">
@@ -17,7 +17,7 @@
 
     <div class="w-2/5">
         {{ svg src="{icon}" class="md:h-48 md:w-48 xl:h-64 xl:w-64 mx-auto" }}
-        <h1 class="{{ text_color }} text-3xl font-sans text-center mt-2">{{ title }}</h1>
+        <h1 class="{{ text_color }} {{ font_heading }} text-3xl text-center mt-2">{{ title }}</h1>
     </div>
 
 </div>

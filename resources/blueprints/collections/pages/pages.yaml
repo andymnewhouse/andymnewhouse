@@ -28,16 +28,33 @@ sections:
           type: template
           display: Template
           localizable: true
+      -
+        handle: mount
+        field:
+          max_items: 1
+          mode: select
+          type: collections
+          listable: hidden
+          display: Collection
   settings:
     display: Settings
     fields:
       -
-        handle: font
+        handle: font_heading
         field:
           input_type: text
           type: text
           listable: hidden
-          display: Font
+          display: 'Header Font'
+          width: 50
+      -
+        handle: font_body
+        field:
+          input_type: text
+          type: text
+          width: 50
+          listable: hidden
+          display: 'Content Font'
       -
         handle: icon
         field:

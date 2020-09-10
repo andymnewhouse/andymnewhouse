@@ -1,6 +1,18 @@
 title: Post
 fields:
   -
+    handle: background
+    field:
+      mode: grid
+      container: assets
+      folder: background
+      restrict: false
+      allow_uploads: true
+      max_files: 1
+      type: assets
+      listable: hidden
+      display: Background
+  -
     handle: bard
     field:
       always_show_set_button: false

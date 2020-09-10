@@ -62,6 +62,16 @@ module.exports = {
         },
     },
     extend: {
+        borderRadius: {
+            'xl': '.75rem'
+        },
+        fontFamily: {
+            'black-ops': ['Black Ops One', 'Helvetica', 'Arial', 'sans-serif'],
+            'open-sans': ['Open Sans', 'Helvetica', 'Arial', 'sans-serif'],
+            'permanent-marker': ['Permanent Marker', 'Helvetica', 'Arial', 'sans-serif'],
+            'space-mono': ['Space Mono', 'SFMono-Regular', 'Menlo'],
+            'vt323': ['VT323', 'SFMono-Regular', 'Menlo']
+        },
         height: {
             '1/2-screen': '49vh'
         },

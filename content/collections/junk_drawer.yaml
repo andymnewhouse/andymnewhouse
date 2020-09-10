@@ -1,5 +1,5 @@
 title: 'Junk Drawer'
-template: junk_drawer/show
+template: post
 layout: layout
 mount: dcfe821e-0fc8-498a-a524-01703c1ad076
 revisions: false
