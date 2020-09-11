@@ -4,6 +4,7 @@ layout: layout
 mount: 86538226-0f01-4221-b431-159cad8ace67
 revisions: false
 route: 'bricksburg/{slug}'
+date: true
 sort_dir: asc
 date_behavior:
   past: public

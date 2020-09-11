@@ -4,6 +4,7 @@ layout: layout
 mount: dcfe821e-0fc8-498a-a524-01703c1ad076
 revisions: false
 route: '/junk-drawer/{slug}'
+date: true
 sort_dir: asc
 date_behavior:
   past: public

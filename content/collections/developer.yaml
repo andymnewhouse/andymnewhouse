@@ -6,6 +6,7 @@ taxonomies:
   - dev_tags
 revisions: false
 route: '/developer/{slug}'
+date: true
 sort_dir: asc
 date_behavior:
   past: public

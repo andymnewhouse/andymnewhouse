@@ -12,8 +12,19 @@
             </div>
         </div>
         <div class="mt-6 grid gap-16 border-t-2 border-gray-100 dark:border-gray-700 pt-12 lg:grid-cols-3 lg:col-gap-5 lg:row-gap-12">
-            {{ collection from="{mount}" }}
-                {{ partial src="components/post" }}
+            {{ collection from="{mount}" pinned:is="true" as="posts" }}
+                {{ if ! no_results }}
+                    {{ posts }}
+                        {{ partial src="components/post" }}
+                    {{ /posts }}
+                {{ /if }}
+            {{ /collection }}
+            {{ collection from="{mount}" pinned:is="false" as="posts" }}
+                {{ if ! no_results }}
+                    {{ posts }}
+                        {{ partial src="components/post" }}
+                    {{ /posts }}
+                {{ /if }}
             {{ /collection }}
         </div>
     </div>

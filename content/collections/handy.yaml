@@ -4,6 +4,7 @@ layout: layout
 mount: 92956f22-4bf6-4a99-8ec3-ed57173fc38d
 revisions: false
 route: '/handy/{slug}'
+date: true
 sort_dir: asc
 date_behavior:
   past: public
