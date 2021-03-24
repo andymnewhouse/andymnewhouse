@@ -30,4 +30,8 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'timeular' => [
+        'token' => env('TIMEULAR_TOKEN'),
+    ]
+
 ];
